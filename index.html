@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>narishakti</title>
+  </head>
+    <body>
+      <!-- The video will be sourced from the public folder. 
+           Make sure your video file is in `public/background.mp4` -->
+      <div class="video-overlay"></div>
+     
+      <button class="begin-button" onclick="window.location.href='/login.html'">Explore with NARISHAKTI ></button>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+        <video autoplay loop muted id="background-video">
+        <source src="/video.webm" type="video/webm" />
+      
+      </video>    
+    </body>
+</html>

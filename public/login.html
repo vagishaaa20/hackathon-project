@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Women Safety Analytics - Secure Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#8A2BE2",
+          "primary-dark": "#4B0082",
+          "background-light": "#f6f6f8",
+          "background-dark": "#101622",
+        },
+        fontFamily: {
+          "display": ["Public Sans", "sans-serif"]
+        },
+        borderRadius: {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+</style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="flex flex-col lg:flex-row min-h-screen">
+      <!-- Left Pane - Visual -->
+      <div class="relative hidden lg:flex w-full lg:w-1/2 items-center justify-center p-8 bg-center bg-no-repeat bg-cover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDb1ZAXjXmGnwF8DRK43zneGHnr6VOkWGNU-G6nlHlP70zZGZTfFZ3oADh1-fDR-a9bq20r-V0oBRYVckx5oXP1SlS2KZCnLAQGQv4NcuVGZYlmDHeNSJKjksEVZRMJ-t0nyYp9wABzrF-NGOWgWzSk2_1xgVMZb5HpR_zaC0HbFjjp9Xyht2oESIKYNxOIClj4WRYugQ9KLmAS3tSRofI0uzqQMHACZCQwaBTgsEEt8KeH_TlYworPS4ot0ovH0Ir0YW7e3AMe5uc');">
+        <div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm"></div>
+        <div class="relative z-10 text-center text-white p-10 max-w-lg">
+          <h1 class="text-4xl font-black leading-tight tracking-[-0.033em] mb-4">Women Safety Analytics</h1>
+          <p class="text-xl font-normal leading-normal text-[#92a4c9]">Securing Communities Through Data.</p>
+        </div>
+      </div>
+
+      <!-- Right Pane - Login Form -->
+      <div class="flex flex-1 flex-col justify-center items-center p-8 lg:p-12 w-full lg:w-1/2">
+        <div class="w-full max-w-md">
+          <!-- Form Title -->
+          <div class="flex flex-col gap-3 p-4 mb-4 text-center lg:text-left">
+            <p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">Secure Login</p>
+            <p class="text-[#92a4c9] text-base font-normal leading-normal">Enter your credentials to access the dashboard.</p>
+          </div>
+
+          <!-- Login Form -->
+          <div class="flex flex-col gap-6 p-4">
+            <!-- Username or Email Field -->
+            <label class="flex flex-col min-w-40 flex-1">
+              <p class="text-white text-base font-medium leading-normal pb-2">Username or Email</p>
+              <div class="flex w-full flex-1 items-stretch rounded-lg">
+                <div class="text-[#92a4c9] flex border border-[#324467] bg-[#192233] items-center justify-center pl-[15px] rounded-l-lg border-r-0">
+                  <span class="material-symbols-outlined" style="font-size: 24px;">person</span>
+                </div>
+                <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-white focus:outline-0 focus:ring-0 border border-[#324467] bg-[#192233] focus:border-[#324467] h-14 placeholder:text-[#92a4c9] p-[15px] border-l-0 text-base font-normal leading-normal" placeholder="Enter your username or email" value=""/>
+              </div>
+            </label>
+
+            <!-- Password Field -->
+            <label class="flex flex-col min-w-40 flex-1">
+              <p class="text-white text-base font-medium leading-normal pb-2">Password</p>
+              <div class="flex w-full flex-1 items-stretch rounded-lg">
+                <div class="text-[#92a4c9] flex border border-[#324467] bg-[#192233] items-center justify-center pl-[15px] rounded-l-lg border-r-0">
+                  <span class="material-symbols-outlined" style="font-size: 24px;">lock</span>
+                </div>
+                <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-white focus:outline-0 focus:ring-0 border border-[#324467] bg-[#192233] focus:border-[#324467] h-14 placeholder:text-[#92a4c9] p-[15px] border-l-0 border-r-0 text-base font-normal leading-normal" placeholder="Enter your password" type="password" value=""/>
+                <div class="text-[#92a4c9] flex border border-[#324467] bg-[#192233] items-center justify-center pr-[15px] rounded-r-lg border-l-0 cursor-pointer">
+                  <span class="material-symbols-outlined" style="font-size: 24px;">visibility_off</span>
+                </div>
+              </div>
+            </label>
+
+            <!-- Forgot Password & Remember Me -->
+            <div class="flex flex-wrap items-center justify-between">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input class="form-checkbox h-5 w-5 rounded bg-[#192233] border-[#324467] text-[#8A2BE2] focus:ring-[#8A2BE2] focus:ring-offset-background-dark" type="checkbox"/>
+                <span class="text-sm font-medium text-white">Remember Me</span>
+              </label>
+              <a class="text-[#8A2BE2] hover:text-[#9B4DE6] text-sm font-medium leading-normal underline transition-colors" href="#">Forgot Password?</a>
+            </div>
+
+            <!-- Login Button -->
+            <button onclick="window.location.href='/dashboard.html'" class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-5 text-white text-base font-bold leading-normal tracking-[0.015em] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-dark transition-all duration-300" style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.9), rgba(75, 0, 130, 0.9)); box-shadow: 0 2px 8px rgba(138, 43, 226, 0.2);" onmouseover="this.style.background='linear-gradient(135deg, rgba(138, 43, 226, 1), rgba(75, 0, 130, 1))'; this.style.boxShadow='0 4px 12px rgba(138, 43, 226, 0.3)'" onmouseout="this.style.background='linear-gradient(135deg, rgba(138, 43, 226, 0.9), rgba(75, 0, 130, 0.9))'; this.style.boxShadow='0 2px 8px rgba(138, 43, 226, 0.2)'">
+              <span class="truncate">Access Dashboard</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="w-full max-w-md mt-10 p-4 text-center">
+          <p class="text-[#92a4c9] text-sm font-normal leading-normal">
+            © 2024 Women Safety Analytics. All Rights Reserved.
+          </p>
+          <div class="flex justify-center gap-4 mt-2">
+            <a class="text-[#8A2BE2] hover:text-[#9B4DE6] text-sm font-normal leading-normal underline transition-colors" href="#">Privacy Policy</a>
+            <span class="text-[#92a4c9]">·</span>
+            <a class="text-[#8A2BE2] hover:text-[#9B4DE6] text-sm font-normal leading-normal underline transition-colors" href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
